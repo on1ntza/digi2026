@@ -1,9 +1,160 @@
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <h1>Hola, soy Onintza.</h1>
-    <h2>Este va a ser mi repositorio de digi...</h2>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portafolios de los Alumnos DAM</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 28px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        ol {
+            list-style: none;
+            counter-reset: item;
+        }
+
+        li {
+            counter-increment: item;
+            margin-bottom: 15px;
+        }
+
+        li a {
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+            border-left: 5px solid #667eea;
+        }
+
+        li a:hover {
+            background: #667eea;
+            color: white;
+            transform: translateX(10px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        li a::before {
+            content: counter(item);
+            background: #667eea;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        li a:hover::before {
+            background: white;
+            color: #667eea;
+        }
+
+        li a:empty::before,
+        li a[href=""] {
+            border-left-color: #dc3545;
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+
+        li a[href=""]:hover,
+        li a:empty:hover {
+            background: #f8f9fa;
+            color: #333;
+            transform: none;
+            box-shadow: none;
+        }
+
+        li a[href=""]::before,
+        li a:empty::before {
+            background: #dc3545;
+        }
+
+        .status {
+            margin-left: auto;
+            font-size: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            li a {
+                padding: 12px 15px;
+                font-size: 14px;
+            }
+
+            li a::before {
+                width: 30px;
+                height: 30px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>📚 Portafolios de los Alumnos DAM 1º</h1>
+    <ol>
+        <li><a href="https://leandrosai.github.io/Digi2026/" target="_blank">Leandro Alvarez Izaguirre <span class="status">✅</span></a></li>
+        <li><a href="https://hegoi30.github.io/digi2026/"  target="_blank">Hegoi Bengoetxea Conde <span class="status">✅</span></a></li>
+        <li><a href="https://haritzcalvo.github.io/digi2026-27/"  target="_blank">Haritz Calvo <span class="status">✅</span></a></li>
+        <li><a href="https://juan-ctrol.github.io/digi2026/"  target="_blank">Juan Esteban Camacho Avila <span class="status">✅</span></a></li>
+        <li><a href="https://itxxasooo.github.io/Digi/"  target="_blank">Itxaso Fidalgo <span class="status">✅</span></a></li>
+        <li><a href="https://lautaro218.github.io/Lautarof/"  target="_blank">Lautaro Fontana <span class="status">✅</span></a></li>
+        <li><a href="" target="_blank">Gorka Galdos <span class="status">❌</span></a></li>
+        <li><a href="https://JulenGonda.github.io/julengonda/" target="_blank">Julen Gonda <span class="status">❌</span></a></li>
+        <li><a href="https://mariogonzalezch.github.io/Digi2026-27/" target="_blank">Mario González Chavarria <span class="status">✅</span></a></li>
+        <li><a href="https://enekogonzalez-prog.github.io/Digi2026/" target="_blank">Eneko Gonzalez Garcia <span class="status">✅</span></a></li>
+        <li><a href="" target="_blank">Rony Melgar <span class="status">❌</span></a></li>
+        <li><a href="https://migueldmm.github.io/DIGI2026/" target="_blank">Miguel Morales <span class="status">✅</span></a></li>
+        <li><a href="" target="_blank">Sergio Pereda <span class="status">❌</span></a></li>
+        <li><a href="" target="_blank">Asier Perez <span class="status">❌</span></a></li>
+        <li><a href="https://miguuuelz26.github.io/Digi2026/" target="_blank">Miguel Alejandro Ramirez Gonzalez <span class="status">✅</span></a></li>
+        <li><a href="https://joelrodriguezortiz.github.io/Digi2026/" target="_blank">Joel Rodriguez <span class="status">✅</span></a></li>
+        <li><a href="https://unairubioseim.github.io/digi2026" target="_blank">Unai Rubio <span class="status">✅</span></a></li>
+        <li><a href="https://elenesolana.github.io/digi2026/" target="_blank">Elene Solana <span class="status">✅</span></a></li>
+        <li><a href="https://javiervalencia21.github.io/DIGI2026-2027" target="_blank">Javier Valencia <span class="status">✅</span></a></li>
+    </ol>
+</div>
+</body>
 </html>
