@@ -218,7 +218,7 @@
 
         .portfolio-list li a::before,
         .portfolio-list li.unavailable::before {
-            content: counter(portfolios, decimal-leading-zero);
+            /*content: counter(portfolios, decimal-leading-zero);*/
             position: absolute;
             left: 22px;
             font-size: 0.85rem;
@@ -368,10 +368,10 @@
             Cada portfolio recoge evidencias de aprendizaje, actividades,
             proyectos y reflexiones realizadas a lo largo del curso.
         </p>
-
-    <h1><a href="./LM/index.html">Marcas</a></h1>
-    <h1><a href="./Digi/index.html">Digi</a></h1>
-        
+        <ol class="portfolio-list">
+            <li><h1><a href="./LM/index.html">Marcas</a></h1></li>
+            <li><h1><a href="./Digi/index.html">Digi</a></h1></li>
+        </ol>
     </section>
 
     <section class="portfolio-section">
