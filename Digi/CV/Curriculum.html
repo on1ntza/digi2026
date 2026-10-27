@@ -1,10 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Curriculum Onintza</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - Onintza</title>
+    <style>
+        /* 2.1. Selector de elemento (tipo) */
+
+        /* Aplica a todos los párrafos del documento */
+        p {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+        }
+
+        /* Aplica a todos los h2 (títulos de sección) */
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+        }
+
+        /* 2.2. Selector de clase */
+
+        /* Todas las secciones del CV */
+        .seccion {
+            margin-bottom: 30px;
+        }
+
+        /* Todos los elementos de una lista */
+        .item {
+            margin-bottom: 8px;
+        }
+
+        /* Estilo para el nombre principal */
+        .nombre {
+            font-size: 28px;
+            color: #222;
+            margin-bottom: 5px;
+        }
+
+        /* Estilo para el texto del título profesional */
+        .titulo-profesional {
+            font-size: 18px;
+            color: #555;
+            margin-top: 0;
+        }
+
+        /* Contacto */
+        .contacto {
+            margin-top: 10px;
+        }
+
+        /* Email y teléfono */
+        .contacto-dato {
+            font-size: 14px;
+            color: #666;
+            margin: 3px 0;
+        }
+
+        /* 2.3. Selector de ID */
+
+        /* Encabezado único del CV */
+        #encabezado-cv {
+            text-align: center;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 6px;
+        }
+
+        /* Sección de perfil */
+        #perfil {
+            background-color: #fafafa;
+            padding: 15px;
+            border-radius: 6px;
+        }
+
+        /* Sección de formación */
+        #formacion {
+            border-left: 4px solid #4a90e2;
+            padding-left: 15px;
+        }
+    </style>
 </head>
 <body>
-    CV - Onintza
+
+<header id="encabezado-cv">
+    <h1 class="nombre">Onintza Aracama</h1>
+    <p class="titulo-profesional">Desarrolladora Web Front-End</p>
+
+    <div class="contacto">
+        <p class="contacto-dato">Email: onintza.aracama@email.com</p>
+        <p class="contacto-dato">Teléfono: +34 600 123 456</p>
+    </div>
+</header>
+
+<main>
+    <section id="perfil" class="seccion">
+        <h2>Perfil profesional</h2>
+        <p>
+            Desarrolladora web con interés en crear interfaces claras, accesibles y responsivas.
+            Experiencia en HTML, CSS y JavaScript, con atención al detalle y al diseño de experiencias de usuario.
+        </p>
+    </section>
+
+    <section id="formacion" class="seccion">
+        <h2>Formación académica</h2>
+
+        <div class="item">
+            <p><strong>Grado en Ingeniería Informática</strong></p>
+            <p>Euskal Herriko Unibertsitatea — 2022 a 2026</p>
+        </div>
+
+        <div class="item">
+            <p><strong>Certificado en Desarrollo Web Front-End</strong></p>
+            <p>Academia Digital — 2024</p>
+        </div>
+    </section>
+
+    <section class="seccion">
+        <h2>Experiencia profesional</h2>
+
+        <div class="item">
+            <p><strong>Desarrolladora Front-End Junior</strong></p>
+            <p>Tech Solutions S.L. — 2024 a la actualidad</p>
+            <p>Desarrollo y mantenimiento de páginas web con HTML, CSS y JavaScript.</p>
+        </div>
+
+        <div class="item">
+            <p><strong>Prácticas de Desarrollo Web</strong></p>
+            <p>Digital Studio — 2023 a 2024</p>
+            <p>Colaboración en la maquetación de interfaces y corrección de estilos responsivos.</p>
+        </div>
+    </section>
+
+    <section class="seccion">
+        <h2>Habilidades</h2>
+        <ul>
+            <li class="item">HTML5 y CSS3</li>
+            <li class="item">JavaScript básico</li>
+            <li class="item">Diseño responsive</li>
+            <li class="item">Git y GitHub</li>
+        </ul>
+    </section>
+</main>
+
 </body>
 </html>
